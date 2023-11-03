@@ -14,7 +14,7 @@
     <#else>
         <div class="card card-empty">
             <i class="ri-inbox-2-fill"></i>
-            该标签下没有文章，回<a href="${context!}">主页</a>看看吧
+           該標籤沒有任何文章，回<a href="${context!}">主頁</a>看看吧
         </div>
     </#if>
 </@layout>
