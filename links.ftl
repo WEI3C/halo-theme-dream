@@ -1,12 +1,12 @@
 <#include "template/layout.ftl">
-<@layout title="${links_title!'友情链接'} - ${blog_title!}" canonical="${links_url!}">
+<@layout title="${links_title!'友情鏈接'} - ${blog_title!}" canonical="${links_url!}">
     <div class="card">
         <#if settings.links_thumbnail?? && settings.links_thumbnail!=''>
             <div class="card-image cover-image" style="background-image: url(${settings.links_thumbnail!})">
             </div>
         </#if>
         <div class="card-content main">
-            <h1 class="title">${links_title!'友情链接'} - ${user.nickname!}的小伙伴们</h1>
+            <h1 class="title">${links_title!'友情鏈接'} - ${user.nickname!}的小伙伴们</h1>
             <div class="main-content">
                 <@linkTag method="listTeams">
                     <#assign defaultAvatar= (settings.links_default_avatar?? && settings.links_default_avatar!='')?string(settings.links_default_avatar!, static + "/source/img/avatar.svg") />
@@ -35,7 +35,7 @@
                                             <#if link.description?? && link.description!=''>
                                                 <div class="link-desc">${link.description!}</div>
                                             <#else>
-                                                <div class="link-desc">他还没有自我介绍呢</div>
+                                                <div class="link-desc">還沒有自我介紹</div>
                                             </#if>
                                         </a>
                                     </li>
@@ -48,12 +48,12 @@
                     <hr/>
                 </#if>
                 <#if settings.show_exchange_info!true>
-                    申请友链的方法：
+                    申請友站連結：
                     <#assign bloggerAvatar= (settings.links_blogger_avatar?? && settings.links_blogger_avatar!='')?string(settings.links_blogger_avatar!, user.avatar!) />
                     <ul>
-                        <li>名称：${blog_title!}</li>
+                        <li>名稱：${blog_title!}</li>
                         <li>地址：<a href="${blog_url!}">${blog_url!}</a></li>
-                        <li>图标：<a href="${bloggerAvatar!}">${bloggerAvatar!}</a></li>
+                        <li>圖標：<a href="${bloggerAvatar!}">${bloggerAvatar!}</a></li>
                         <li>描述：${user.description!}</li>
                     </ul>
                 </#if>
