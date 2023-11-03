@@ -8,7 +8,7 @@
     <#else>
         <div class="card card-empty">
             <i class="ri-inbox-2-fill"></i>
-            搜索结果为空，回<a href="${context!}">主页</a>看看吧
+           沒有符合的搜尋結果，回<a href="${context!}">主頁</a>看看吧
         </div>
     </#if>
 </@layout>
