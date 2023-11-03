@@ -97,7 +97,7 @@
     <#else>
         <div class="card card-empty">
             <i class="ri-inbox-2-fill"></i>
-            还没有发表过文章
+            恩..看起來沒有任何文章欸！
         </div>
     </#if>
 </@layout>
