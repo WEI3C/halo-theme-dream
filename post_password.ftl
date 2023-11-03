@@ -1,6 +1,6 @@
 <#include "template/layout.ftl">
 <#include "template/main/article.ftl">
-<@layout title="私密内容访问 - ${blog_title!}" canonical="${blog_url!}">
+<@layout title="私密內容訪問 - ${blog_title!}" canonical="${blog_url!}">
     <style>
         .post-password {
             margin: 40px auto 64px auto;
@@ -130,15 +130,15 @@
     </style>
     <div class="card">
         <form class="post-password" method="post" action="${blog_url!}/content/${type!}/${slug!}/authentication">
-            <h2 class="title">私密内容访问</h2>
+            <h2 class="title">私密內容訪問</h2>
             <div class="password-input">
-                <input type="password" name="password" placeholder="请输入访问密码">
+                <input type="password" name="password" placeholder="請輸入密碼">
                 <span class="bottom"></span>
                 <span class="right"></span>
                 <span class="top"></span>
                 <span class="left"></span>
             </div>
-            <button type="submit">验证</button>
+            <button type="submit">驗證</button>
             <div style="margin-top: 8px;color: red; text-align: center">${errorMsg!}</div>
         </form>
     </div>
