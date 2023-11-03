@@ -34,7 +34,7 @@
     <#else>
         <div class="card card-empty">
             <i class="ri-inbox-2-fill"></i>
-            还没有发表过文章，回<a href="${context!}">主页</a>看看吧
+            沒有任何文章，回<a href="${context!}">主頁</a>看看吧
         </div>
     </#if>
 </@layout>
