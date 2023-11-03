@@ -1,2 +1,2 @@
 <#include "template/errorpage.ftl">
-<@errorpage "找不到网页","无法找到该文章或分类，可能已被删除，去<a href='${blog_url}'>首页</a>看看吧。","${status!}","${error!}","${message!}" />
+<@errorpage "找不到網頁","找不到該文章或分類，他可能被刪除了，去<a href='${blog_url}'>首頁</a>看看吧。","${status!}","${error!}","${message!}" />
