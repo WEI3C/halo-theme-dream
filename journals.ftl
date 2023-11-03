@@ -41,7 +41,7 @@
     <#else>
         <div class="card card-empty">
             <i class="ri-inbox-2-fill"></i>
-            还没有发表过动态，回<a href="${context!}">主页</a>看看吧
+            目前沒有任何動態，回<a href="${context!}">主頁</a>看看吧
         </div>
     </#if>
 </@layout>
